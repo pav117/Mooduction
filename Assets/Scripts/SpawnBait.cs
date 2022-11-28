@@ -15,14 +15,31 @@ public class SpawnBait : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Mouse1))
-            {
-            SpawnIt();
-        }
+      //  if (Input.GetKeyUp(KeyCode.Mouse1))
+       //     {
+       //     SpawnIt();
+      //  }
     }
 
-    void SpawnIt()
+   public void SpawnIt()
     {
-        Instantiate(BaitSpawn, transform.position, Quaternion.identity);
+        GameObject tempBait = Instantiate(BaitSpawn, transform.position, Quaternion.identity);
+
+        GameObject[] Cows = GameObject.FindGameObjectsWithTag("Cow");
+        if (Cows.Length > 0)
+        {
+            foreach (GameObject cow in Cows)
+            {
+                cow.SendMessage("AddGrass", tempBait.transform, SendMessageOptions.DontRequireReceiver);
+            }
+        }
+        GameObject[] YFarmers = GameObject.FindGameObjectsWithTag("YFarmer");
+        if (YFarmers.Length > 0)
+        {
+            foreach (GameObject YFarmer in YFarmers)
+            {
+                YFarmer.SendMessage("AddGrass", tempBait.transform, SendMessageOptions.DontRequireReceiver);
+            }
+        }
     }
 }

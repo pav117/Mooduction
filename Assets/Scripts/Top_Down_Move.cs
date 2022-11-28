@@ -10,15 +10,18 @@ public class Top_Down_Move : MonoBehaviour
 
     Vector2 moveDirection;
     Vector2 mousePosition;
-
+    public FixedJoystick joystickscriptreference;
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        //float moveX = Input.GetAxisRaw("Horizontal");
+        //float moveY = Input.GetAxisRaw("Vertical");
+
+        float moveX  = joystickscriptreference.Horizontal;
+        float moveY = joystickscriptreference.Vertical;
 
         //if(Input.GetMouseButtonDown(0))
         //{
-         //   weapon.Fire();
+        //   weapon.Fire();
         //}
         moveDirection = new Vector2(moveX, moveY).normalized;
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cow
   - Bait
+  - YFarmer
   layers:
   - Default
   - TransparentFX

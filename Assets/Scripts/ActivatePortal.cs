@@ -15,6 +15,10 @@ public class ActivatePortal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Portal.SetActive(true);
+        GameObject[] Cows = GameObject.FindGameObjectsWithTag("Cow");
+        if (Cows.Length == 0)
+        {
+            Portal.SetActive(true);
+        }  
     }
 }

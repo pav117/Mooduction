@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class OpenPen : MonoBehaviour
 {
-    public float MovementSpeed = 1;
+    public GameObject Entrance;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +14,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var movement = Input.GetAxis("Horizontal");
         
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Cow"))
+        {
+            Entrance.SetActive(false);
+        }
+
     }
 }
