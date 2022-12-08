@@ -1323,7 +1323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5653916731189037685, guid: d2c8c071f616fb749934af4262f6748e, type: 3}
       propertyPath: m_Constraints
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7190050743345422569, guid: d2c8c071f616fb749934af4262f6748e, type: 3}
       propertyPath: cowRange
@@ -2062,7 +2062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5653916731189037685, guid: d2c8c071f616fb749934af4262f6748e, type: 3}
       propertyPath: m_Constraints
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7190050743345422569, guid: d2c8c071f616fb749934af4262f6748e, type: 3}
       propertyPath: cowRange
@@ -4055,7 +4055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7195725632646352985, guid: 613bd525bd5006e42b2a2d0f31e2be3b, type: 3}
   firePoint: {fileID: 2118816655}
-  fireForce: 20
+  fireForce: 15
   shooting: 0
   cooldown: 1
 --- !u!1 &1449964896
@@ -4220,7 +4220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7195725632646352985, guid: 613bd525bd5006e42b2a2d0f31e2be3b, type: 3}
   firePoint: {fileID: 342090663}
-  fireForce: 20
+  fireForce: 15
   shooting: 0
   cooldown: 1
 --- !u!114 &1505863471
@@ -5615,7 +5615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5653916731189037685, guid: d2c8c071f616fb749934af4262f6748e, type: 3}
       propertyPath: m_Constraints
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7190050743345422569, guid: d2c8c071f616fb749934af4262f6748e, type: 3}
       propertyPath: cowRange
