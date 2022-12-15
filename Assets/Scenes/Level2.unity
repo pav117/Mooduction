@@ -3277,6 +3277,7 @@ GameObject:
   - component: {fileID: 1009961758}
   - component: {fileID: 1009961759}
   - component: {fileID: 1009961760}
+  - component: {fileID: 1009961761}
   m_Layer: 0
   m_Name: Entrance
   m_TagString: Untagged
@@ -3377,6 +3378,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1009961761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009961757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6f99986d70fde408f8ddbdc8f7de16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Entrance: {fileID: 1009961757}
 --- !u!1 &1013295049
 GameObject:
   m_ObjectHideFlags: 0
@@ -5793,7 +5807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5978614070041693759, guid: c8b852600266e5649ae2f0dde9f64dfc, type: 3}
       propertyPath: beamTimer
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b852600266e5649ae2f0dde9f64dfc, type: 3}

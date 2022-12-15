@@ -4553,7 +4553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tractorbeam: {fileID: 735026642}
   CrystalSpawn: {fileID: 4698331646729549893, guid: ee1ab8ecfe6da6d43b5ec8a9bb8aac55, type: 3}
-  beamTimer: 2
+  beamTimer: 5
 --- !u!1 &1603372120
 GameObject:
   m_ObjectHideFlags: 0
